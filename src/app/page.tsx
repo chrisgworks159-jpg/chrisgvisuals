@@ -200,32 +200,7 @@ function MarqueeStrip({ items, reverse = false }: { items: string[]; reverse?: b
   );
 }
 
-/* ── Spotify Player ── */
-function SpotifyPlayer() {
-  const [show, setShow] = useState(true);
-  if (!show) return null;
-  return (
-    <div className="fixed bottom-6 right-6 z-50 hidden tablet:block">
-      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-[#08080f]/90 shadow-lg shadow-cyan-500/10 backdrop-blur-xl">
-        <button
-          onClick={() => setShow(false)}
-          className="absolute -right-0 -top-0 z-10 rounded-bl-xl rounded-tr-2xl bg-white/10 px-2 py-1 text-[10px] text-zinc-400 transition-colors hover:bg-white/20 hover:text-white"
-        >
-          ✕
-        </button>
-        <iframe
-          src="https://open.spotify.com/embed/artist/0eDKWahBIezUMhrsPjbqJB?utm_source=generator&theme=0"
-          width="300"
-          height="80"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-          className="block rounded-2xl"
-          style={{ border: 0 }}
-        />
-      </div>
-    </div>
-  );
-}
+
 
 /* ══════════════════════════════════════════════ */
 /*                   HOME PAGE                   */
@@ -266,7 +241,6 @@ function HomePage() {
       </div>
       <div className="relative z-10">
       {video && <VideoModal videoId={video} onClose={() => setVideo(null)} />}
-      <SpotifyPlayer />
 
       {/* ══ NAV ══ */}
       <nav className={`fixed top-0 left-0 z-50 w-full transition-all duration-500 ${scrolled ? "bg-[#08080f]/80 backdrop-blur-2xl border-b border-white/5 shadow-lg shadow-cyan-500/5" : ""}`}>
