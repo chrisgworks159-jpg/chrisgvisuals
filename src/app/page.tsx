@@ -214,7 +214,7 @@ function SpotifyPlayer() {
           ✕
         </button>
         <iframe
-          src="https://open.spotify.com/embed/track/4cOdK2LlmYTvmYTvGR8xb6?utm_source=generator&theme=0"
+          src="https://open.spotify.com/embed/artist/0eDKWahBIezUMhrsPjbqJB?utm_source=generator&theme=0"
           width="300"
           height="80"
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
