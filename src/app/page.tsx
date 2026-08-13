@@ -304,7 +304,7 @@ function HomePage() {
             {/* Main heading */}
             <h1 className="text-5xl font-bold uppercase leading-[0.92] tracking-tight tablet:text-7xl desktop:text-9xl" style={heading}>
               YOUR SONG<br />DESERVES A<br />
-              <span className="bg-gradient-to-r from-cyan-400 via-cyan-400 to-cyan-300 bg-clip-text text-transparent">FIRE VISUAL!</span>
+              <span style={{ color: "#22d3ee" }}>FIRE VISUAL!</span>
             </h1>
 
             <p className="mt-8 max-w-lg text-base leading-relaxed text-zinc-400" style={{ fontFamily: "'Inter', sans-serif" }}>
