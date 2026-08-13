@@ -157,7 +157,7 @@ const FAQS = [
 const SERVICES = [
   {
     t: "STANDARD",
-    p: "$70\u201395/min",
+    p: "$60/min",
     items: ["Beat-synced editing", "Color grading", "Effects & transitions", "Audio sync", "4K delivery", "TikTok/Reels version", "1 revision"],
     tags: ["Anime Rap", "AMVs", "Character Edits"],
     pop: false,
@@ -165,7 +165,7 @@ const SERVICES = [
   },
   {
     t: "PREMIUM",
-    p: "$90\u2013125+/min",
+    p: "$100\u2013125/min",
     items: ["Motion graphics & VFX", "Kinetic typography", "Advanced compositions", "Cinematic editing", "4K delivery", "TikTok/Reels version", "2 revisions"],
     tags: ["Nerdcore MVs", "Anime Rap", "Geek Songs"],
     pop: true,
@@ -632,8 +632,8 @@ function HomePage() {
                     <label className="mb-2 block text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500" style={heading}>BUDGET</label>
                     <select name="budget" className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-zinc-400 outline-none transition-all focus:border-cyan-400/50 focus:ring-1 focus:ring-cyan-400/20">
                       <option value="">Select</option>
-                      <option>Under $80/min</option>
-                      <option>$80 - $125/min</option>
+                      <option>Under $60/min</option>
+                      <option>$60 - $125/min</option>
                       <option>$125+/min</option>
                     </select>
                   </div>
